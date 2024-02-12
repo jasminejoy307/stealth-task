@@ -1,0 +1,11 @@
+# Enable mod_headers module
+<IfModule mod_headers.c>
+    # Set X-XSS-Protection Header
+    Header set X-XSS-Protection "1; mode=block"
+
+    # Set X-Content-Type-Options Header
+    Header set X-Content-Type-Options "nosniff"
+
+    # Set Content Security Policy (CSP)
+    Header set Content-Security-Policy "default-src 'self'"
+</IfModule>

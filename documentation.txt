@@ -1,0 +1,29 @@
+Secure File Upload System Documentation
+---------------------------------------------
+
+1.Overview
+----------
+The secure file upload system is a web-based application designed to allow authenticated users to securely upload files to a server. The system implements robust security measures to prevent malicious uploads and potential attacks.
+
+2.System Requirements
+----------------------
+1.Web server (e.g., Apache, Nginx)
+2.PHP version 7.0 or higher
+3.MySQL or compatible database server
+
+
+3.File Upload Process
+---------------------------
+Log in to the system using valid credentials.Navigate to the file upload page.Select the file to upload from the local file system.Upload files within the allowed file types (e.g., JPG, PNG, PDF, DOCX).Ensure that uploaded files do not exceed the maximum file size limit (e.g., 5MB).
+
+4.Security Features
+------------------------
+File type validation ensures that only allowed file types are accepted.File size limits prevent excessively large files from being uploaded.Input sanitization protects against injection attacks and ensures file name integrity.Uploaded files are stored in a secure directory outside the web server's root directory.Logging records all file upload activities, including user IDs, file names, IP addresses, and timestamps.Security headers are configured to mitigate cross-site scripting (XSS) and content sniffing attacks.
+
+5.Testing Procedures
+--------------------------
+1.Test various scenarios for both successful file uploads and rejected upload attempts.
+2.Verify user authentication by logging in with valid and invalid credentials.
+3.Check security headers using browser developer tools or online header-checking tools.
+4.Attempt to directly access files in the upload directory to ensure proper security measures are in place.
+5.Monitor the logs table for recorded upload activities and verify data integrity.

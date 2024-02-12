@@ -1,0 +1,2 @@
+# Disable script execution
+Options -ExecCGI -Indexes
