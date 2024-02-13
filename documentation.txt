@@ -14,11 +14,20 @@ The secure file upload system is a web-based application designed to allow authe
 
 3.File Upload Process
 ---------------------------
-Log in to the system using valid credentials.Navigate to the file upload page.Select the file to upload from the local file system.Upload files within the allowed file types (e.g., JPG, PNG, PDF, DOCX).Ensure that uploaded files do not exceed the maximum file size limit (e.g., 5MB).
+1.Log in to the system using valid credentials.
+2.Navigate to the file upload page.
+3.Select the file to upload from the local file system.
+4.Upload files within the allowed file types (e.g., JPG, PNG, PDF, DOCX).
+5.Ensure that uploaded files do not exceed the maximum file size limit (e.g., 5MB).
 
 4.Security Features
 ------------------------
-File type validation ensures that only allowed file types are accepted.File size limits prevent excessively large files from being uploaded.Input sanitization protects against injection attacks and ensures file name integrity.Uploaded files are stored in a secure directory outside the web server's root directory.Logging records all file upload activities, including user IDs, file names, IP addresses, and timestamps.Security headers are configured to mitigate cross-site scripting (XSS) and content sniffing attacks.
+1.File type validation ensures that only allowed file types are accepted.
+2.File size limits prevent excessively large files from being uploaded.
+3.Input sanitization protects against injection attacks and ensures file name integrity.
+4.Uploaded files are stored in a secure directory outside the web server's root directory.
+5.Logging records all file upload activities, including user IDs, file names, IP addresses, and timestamps.
+6.Security headers are configured to mitigate cross-site scripting (XSS) and content sniffing attacks.
 
 5.Testing Procedures
 --------------------------
